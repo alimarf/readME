@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [ 
+      {
+        "name": "readME (Dev-Android-Real Device)",
+        "type": "dart",
+        "request": "launch",
+        "openDevTools": "network",
+        "program": "lib/main.dev.dart",
+        "args": [
+          "--flavor",
+          "dev",
+          "-d",
+          "adb-07445371AA102479-xcZTzG._adb-tls-connect._tcp.",
+          "-v"
+        ]
+      },
+      {
+        "name": "readME (Dev-Android-Emulator)",
+        "type": "dart",
+        "request": "launch",
+        "openDevTools": "network",
+        "program": "lib/main.dev.dart",
+        "args": ["--flavor", "dev", "-v", "-d", "emulator-5554"]
+      },
+      {
+        "name": "readME (Dev-IOS-Real Device)",
+        "type": "dart",
+        "request": "launch",
+        "openDevTools": "network",
+        "program": "lib/main.dev.dart",
+        "args": ["--flavor", "dev", "-d", "Iphone 8", "-v"]
+      },
+      {
+        "name": "readME (Dev-IOS-Emulator)",
+        "type": "dart",
+        "request": "launch",
+        "openDevTools": "network",
+        "program": "lib/main.dev.dart",
+        "args": ["--flavor", "dev", "-d", "Iphone Xs", "-v"]
+      },
+    ]
+  }
+  
